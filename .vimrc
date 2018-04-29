@@ -85,6 +85,7 @@ let NERDTreeMapOpenInTab='<ENTER>'
 " Sets how many lines of history VIM has to remember
 set history=500
 set number
+set relativenumber
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
@@ -110,7 +111,7 @@ command W w !sudo tee % > /dev/null
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+set so=17
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en' 
@@ -191,7 +192,9 @@ syntax enable
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
-
+if $TERM == 'xterm-256color'
+        set t_Co=256
+endif
 try
     colorscheme elflord 
 catch
@@ -318,8 +321,9 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 set laststatus=2
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
-
+set statusline=.leader.is.comma
+set statusline+=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c 
+set statusline+=\ %p%%
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -364,7 +368,7 @@ map <leader>g :Ag
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 
 " Do :help cope if you are unsure what cope is. It's super useful!
-"
+
 " When you search with Ag, display your results in cope by doing:
 "   <leader>cc
 "
