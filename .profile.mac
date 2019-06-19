@@ -1,0 +1,11 @@
+
+# MacPorts Installer addition on 2016-10-25_at_17:56:34: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/include:/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+PKG_CONFIG_PATH="/opt/local/include:$PKG_CONFIG_PATH"
+source /usr/local/djgpp/setenv
+export DJGPP_CC=/usr/local/djgpp/bin/i586-pc-msdosdjgpp-gcc
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+

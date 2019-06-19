@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -f avfoundation -i "1:1" -pix_fmt yuv420p -r 50 screen_$RANDOM.mov

@@ -1,0 +1,86 @@
+Last login: Sat Jun 30 22:33:42 on ttys002
+          
+    .-'''-.                    
+   '   _    \                  
+ /   /` '.   \ __  __   ___    
+.   |     \  '|  |/  `.'   `.  
+|   '      |  |   .-.  .-.   ' 
+\    \     / /|  |  |  |  |  | 
+ `.   ` ..' / |  |  |  |  |  | 
+    '-...-'`  |  |  |  |  |  | 
+              |  |  |  |  |  | 
+              |__|  |__|  |__| 
+                               
+                               
+                               
+~ ➤ ssh gerasimu@cpanel16.v.fozzy.com 
+gerasimu@cpanel16 [~]# cd public_html/
+gerasimu@cpanel16 [~/public_html]# ls
+./               beriafm/              home/       kosta.txt       wiki/
+../              cgi-bin/              ih/         robots.txt      zzz/
+.htaccess        dmitrygerasimuk.com/  img/        start/          ~dmitry/
+.index.html.swp  dos/                  index.html  test.liq
+JD2Setup.dmg     hey.jpg               insta.txt   uptownfunk.mp3
+gerasimu@cpanel16 [~/public_html]# cd dmitrygerasimuk.com/
+gerasimu@cpanel16 [~/public_html/dmitrygerasimuk.com]# ls
+./                          apple-touch-icon.png  mstile-150x150.png
+../                         april2018.gif         noise.html
+.DS_Store                   backindex.html        pa/
+.ftpquota                   bindex.html           paper-pattern-inv.png
+.git/                       browserconfig.xml     paper-pattern.png
+.gitignore                  css/                  safari-pinned-tab.svg
+.htaccess                   dist/                 share/
+ITSATV/                     favicon-16x16.png     test2TV.html
+ITSATV_slide/               favicon-32x32.png     testTV.html
+README.md                   favicon.ico           tools/
+TV/                         favicons/             zocial-regular-webfont.eot
+TV_old.html                 fonts/                zocial-regular-webfont.svg
+TV_work/                    index.html            zocial-regular-webfont.ttf
+android-chrome-192x192.png  inprogress/           zocial-regular-webfont.woff
+android-chrome-512x512.png  jquery.js*
+app/                        manifest.json
+gerasimu@cpanel16 [~/public_html/dmitrygerasimuk.com]# cd ITSATV
+gerasimu@cpanel16 [~/public_html/dmitrygerasimuk.com/ITSATV]# ls
+./                          html_code.html         testback.html
+../                         index.html             tv.jpg
+.htaccess                   mstile-150x150.png     tv1200.jpg
+alertify.css                paper-pattern.png      tv1200a.jpg
+android-chrome-192x192.png  php.html               tv1200bw.jpg
+android-chrome-256x256.png  proxy.php              useron.php
+apple-touch-icon.png        safari-pinned-tab.svg  useronmuted.php
+browserconfig.xml           site.webmanifest       userson.txt*
+favicon-16x16.png           slide.html             usersonmuted.txt*
+favicon-32x32.png           sweet-modal.js         videos\ copy.js
+favicon.ico                 test.html              videos.js
+hello.php                   test.php
+gerasimu@cpanel16 [~/public_html/dmitrygerasimuk.com/ITSATV]# vim .htaccess 
+gerasimu@cpanel16 [~/public_html/dmitrygerasimuk.com/ITSATV]# php
+^C
+gerasimu@cpanel16 [~/public_html/dmitrygerasimuk.com/ITSATV]# php 0v
+Could not open input file: 0v
+gerasimu@cpanel16 [~/public_html/dmitrygerasimuk.com/ITSATV]# php -v
+ea-php-cli Copyright 2017 cPanel, Inc.
+PHP 5.6.36 (cli) (built: Jun 14 2018 05:21:51) 
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
+    with the ionCube PHP Loader (enabled) + Intrusion Protection from ioncube24.com (unconfigured) v10.2.0, Copyright (c) 2002-2018, by ionCube Ltd.
+    with SourceGuardian v11.2, Copyright (c) 2000-2018, by SourceGuardian Ltd.
+gerasimu@cpanel16 [~/public_html/dmitrygerasimuk.com/ITSATV]# vim .htaccess 
+
+ + .htaccess                                                                    
+   7             ExpiresActive Off
+   8                 </IfModule>
+   9                     <IfModule mod_headers.c>
+  10                             FileETag None
+  11                                     Header unset ETag
+  12                                             Header unset Pragma
+  13                                                     Header unset Cache-         Control
+  14                                                             Header unset        Last-Modified
+  15                                                                     Header      set Pragma "no-cache"
+  16                                                                                  Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+  17                                                                                          Header set Expires "Mon, 10 Apr 1972 00:00:00 GMT"
+  18                                                                                              </IfModule>
+  19                                                                                              </FilesMatch>                                                 
+ < /home/gerasimu/public_html/dmitrygerasimuk.com/ITSATV   Line: 19  Column: 102
+".htaccess" 4L, 142C
+-- INSERT --
