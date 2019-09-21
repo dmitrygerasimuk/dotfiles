@@ -1,5 +1,5 @@
 # github/dmitrygerasimuk/dotfiles
-
+# ~/.bash_profile
 
 PATH=$PATH":/opt/:/opt/local/bin:/opt/local/:/opt/local/include:/opt/local/etc/"; export PATH
 
@@ -17,9 +17,14 @@ export PS1="\[\e[32m\]\h\[\e[m\]@\[\e[33m\]:\[\e[m\]\[\e[33m\]\w\[\e[m\]\\$ "
 alias love="/Applications/love.app/Contents/MacOS/love"
 alias l='gls --color=auto'
 #alias ls='gls --color=auto'
+alias cp="rsync -aP"
+alias ll='gls --color=auto -l'
 
 # colorls https://github.com/athityakumar/colorls
-source $(dirname $(gem2.4 which colorls))/tab_complete.sh
+# source $(dirname $(gem2.4 which colorls))/tab_complete.sh
+#
+source /opt/local/lib/ruby2.4/gems/2.4.0/gems/colorls-1.1.1/lib/tab_complete.sh
+
 alias ls='colorls --sd'
 
 alias lc='colorls -lA --sd'
@@ -141,8 +146,8 @@ LS_COLORS="bd=38;5;68;1:ca=38;5;17:cd=38;5;132;1:di=1;034:do=38;5;127:ex=38;5;80
 export LS_COLORS
 export LSCOLORS=ExFxBxDxCxegedabagacad
 source ~/.bash-powerline.sh
-
-
-
+alias
+echo "FUCK"
+echo "rclone sync /home/local/directory remote:directory"
 
 

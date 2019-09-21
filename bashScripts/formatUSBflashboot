@@ -1,0 +1,1 @@
+diskutil partitionDisk /dev/disk3 1 "Free Space" "unused" "100%"
