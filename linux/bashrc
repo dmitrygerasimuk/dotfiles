@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=2000
+HISTFILESIZE=9000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -64,7 +64,7 @@ fi
 unset color_prompt force_color_prompt
 
 alias sudo='sudo env PATH=$PATH'
-
+alias t='todo-txt'
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
