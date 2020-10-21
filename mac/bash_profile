@@ -11,7 +11,7 @@ LC_ALL="ru_RU.UTF-8"; export LC_ALL
 
 #export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ "
 export CLICOLOR=1
-export PS1="\[\e[32m\]\h\[\e[m\]@\[\e[33m\]:\[\e[m\]\[\e[33m\]\w\[\e[m\]\\$ "
+export PS1="\[\e[32m\]\h\[\e[m\]@\[\e[33m\]:\[\e[m\]\[\e[33m\]\w\[\e[m\]\\$"
 
 #aliases
 alias love="/Applications/love.app/Contents/MacOS/love"
@@ -148,6 +148,5 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 source ~/.bash-powerline.sh
 alias
 echo "FUCK"
+
 echo "rclone sync /home/local/directory remote:directory"
-
-

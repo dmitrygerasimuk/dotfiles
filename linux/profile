@@ -17,12 +17,17 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 #
+export MC_SKIN=xoria256
 export EDITOR=vim
 #export TERM=xterm-256colors
 #
 
 
 # set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$HOME/.local/lib:$HOME/.local/share:$PATH"
+fi
+
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
@@ -30,7 +35,8 @@ fi
 #byobu-tmux attach || byobu-tmux new-session -d vim new-window bc new-window bash
 #byobu-tmux new-window sh
 #byobu-tmux attach
-
+ 
 _byobu_sourced=1 . /usr/bin/byobu-launch
 
 export PATH="$HOME/.cargo/bin:$PATH"
+ 

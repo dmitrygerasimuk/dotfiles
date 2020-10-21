@@ -12,3 +12,5 @@ echo -n "";
 export CLICOLOR=1
 export PS1="\[\e[32m\]\h\[\e[m\]@\[\e[33m\]:\[\e[m\]\[\e[33m\]\w\[\e[m\]\\$ "
  
+
+export PATH="$PATH:/Users/dmitry/Library/Application Support/KomodoIDE/12.0/XRE/state" # ActiveState State Tool
