@@ -19,7 +19,7 @@ alias l='gls --color=auto'
 #alias ls='gls --color=auto'
 alias cp="rsync -aP"
 alias ll='gls --color=auto -l'
-
+alias t='todotxt'
 # colorls https://github.com/athityakumar/colorls
 # source $(dirname $(gem2.4 which colorls))/tab_complete.sh
 #
