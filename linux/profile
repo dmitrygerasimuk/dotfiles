@@ -35,9 +35,11 @@ fi
 #byobu-tmux attach || byobu-tmux new-session -d vim new-window bc new-window bash
 #byobu-tmux new-window sh
 #byobu-tmux attach
-
+ 
+ 
 if [ -d "/usr/bin/byobu-launch" ] ; then
   _byobu_sourced=1 . /usr/bin/byobu-launch
 fi 
 
 export PATH="$HOME/.cargo/bin:$PATH"
+ 

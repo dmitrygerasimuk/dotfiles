@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo su -c "echo -n 0x02 > /sys/module/hid_apple/parameters/fnmode"
+far2l --tty
+sudo su -c "echo -n 0x01 > /sys/module/hid_apple/parameters/fnmode"
