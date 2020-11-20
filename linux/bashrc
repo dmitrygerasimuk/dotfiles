@@ -18,6 +18,10 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=2000
 HISTFILESIZE=9000
+export TODO_FILE="$HOME/Dropbox/Apps/Todotxt+/todo.txt"
+export DONE_FILE="$HOME/Dropbox/Apps/Todotxt+/done.txt"
+export REPORT_FILE="$HOME/Dropbox/Apps/Todotxt+/report.txt"
+
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -64,7 +68,7 @@ fi
 unset color_prompt force_color_prompt
 
 alias sudo='sudo env PATH=$PATH'
-alias t='todo-txt'
+alias t='todo-txt -d ~/.todo-txt/config'
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
