@@ -37,7 +37,7 @@ fi
 #byobu-tmux attach
  
  
-if [ -d "/usr/bin/byobu-launch" ] ; then
+if [ -f "/usr/bin/byobu-launch" ] ; then
   _byobu_sourced=1 . /usr/bin/byobu-launch
 fi 
 
