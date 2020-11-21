@@ -125,7 +125,7 @@ if [ -z "$_motd_listed" ]; then
                                 fi
  
 alias grep="ack-grep"
-if [ -d "$HOME/.bash-powerline.sh" ] ; then
+if [ -f "$HOME/.bash-powerline.sh" ] ; then
   source ~/.bash-powerline.sh
 fi 
 
