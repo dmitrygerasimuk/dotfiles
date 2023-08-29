@@ -10,6 +10,6 @@ fzf --ansi --height=80% \
     --disabled --query "$INITIAL_QUERY" \
     --bind "change:reload:sleep 0.1; $RG_PREFIX {q} || true" \
     --delimiter : \
-    --preview 'bat --color=always {1} --highlight-line {2}' \
+    --preview 'bat --decorations=always --color=always {1} --highlight-line {2}' \
     --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \
     --bind 'enter:become(nvim {1} +{2})'
